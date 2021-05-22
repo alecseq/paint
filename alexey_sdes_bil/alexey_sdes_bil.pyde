@@ -7,11 +7,12 @@ def setup() :
     size (600,600)
     strokeWeight(6)
 def draw ():
+
+    fill(255,255,255)
+    rect (20,70,220,40)
+    fill(66,84,103)
     textSize(50)
-    text(u"очистить",40,150)
-    fill(33,55,86)
-    rect (20,70,60,40)
-    
+    text(u"очистить",20,100)
     fill(100)
     rect (510,10,60,40)
     
