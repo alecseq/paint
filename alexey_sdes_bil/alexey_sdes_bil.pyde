@@ -1,8 +1,20 @@
+r = 0
+g = 0
+b = 0
+
 def setup() :
-    background(90)
+    background(255)
     size (600,600)
     strokeWeight(6)
 def draw ():
+    textSize(50)
+    text(u"очистить",40,150)
+    fill(33,55,86)
+    rect (20,70,60,40)
+    
+    fill(100)
+    rect (510,10,60,40)
+    
     fill(255,255,255)
     rect (440,10,60,40)
     
@@ -18,6 +30,8 @@ def draw ():
     rect (90,10,60,40)
     fill(0,0,255)
     rect (160,10,60,40)
+    
+    
     if mousePressed:
         line(pmouseX,pmouseY,mouseX,mouseY)
 def mouseClicked():
@@ -50,10 +64,19 @@ def mouseClicked():
         strokeWeight(6)
         fill("#FC00EC")
         stroke("#FC00EC")
-    
-def keyPressed():
-    if key == 'q':
-        strokeWeight(28)
+        
+    if mouseX > 440 and mouseX < 440+60 and mouseY > 10 and mouseY< 10+40:
+        strokeWeight(32)
+        fill(255,255,255)
+        stroke(255,255,255)
+
+    if mouseX > 510 and mouseX < 510+60 and mouseY > 10 and mouseY< 10+40:
+        strokeWeight(6)
+        fill(255)
         stroke(90)
+        
+    if mouseX > 20 and mouseX < 20+60 and mouseY > 70 and mouseY< 70+40:
+        background(255)
+
  
         
